@@ -1,0 +1,6 @@
+<h1>App shell</h1>
+<ng-container #comp *ngFor="let item of loaders" [ngSwitch]="item.framework">
+  <app-react-wrapper *ngSwitchCase="'react'" [component]="item.component"></app-react-wrapper>
+  <app-vue-wrapper *ngSwitchCase="'vue'" [component]="item.component"></app-vue-wrapper>
+  <app-angular-wrapper *ngSwitchDefault [component]="item.component"></app-angular-wrapper>
+</ng-container>

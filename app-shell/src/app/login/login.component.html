@@ -1,0 +1,10 @@
+<h1>Login</h1>
+<div>
+  <div>Username</div>
+  <input type="text" [(ngModel)]="username" (keyup.enter)="login()" />
+</div>
+<div>
+  <div>Password</div>
+  <input type="password" [(ngModel)]="password" (keyup.enter)="login()" />
+</div>
+<button (click)="login()">Login</button>
