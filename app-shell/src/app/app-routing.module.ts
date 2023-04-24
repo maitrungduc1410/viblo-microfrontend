@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: 'main',
     component: MainComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path: '**',
